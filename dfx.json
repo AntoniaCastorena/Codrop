@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Codrop_backend": {
+      "main": "src/Codrop_backend/main.mo",
+      "type": "motoko"
+    },
+    "Codrop_frontend": {
+      "dependencies": [
+        "Codrop_backend"
+      ],
+      "source": [
+        "src/Codrop_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Codrop_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
